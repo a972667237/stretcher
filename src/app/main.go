@@ -2,6 +2,7 @@ package main
 
 import (
 	"app/models"
+	"app/pkg/redis"
 	"app/pkg/setting"
 	"app/router"
 	"fmt"
@@ -20,6 +21,7 @@ func init() {
 	}
 	setting.Setup()
 	models.Setup()
+	redis.Setup()
 }
 
 func main() {
